@@ -1,0 +1,14 @@
+table{
+    text-align: center;
+}
+
+.items{
+    padding: 0 30px;
+    height:60px;
+    border: solid 1px;
+    background-color: none;
+}
+
+#mainItems{
+    margin: 50px;
+}

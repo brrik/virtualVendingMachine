@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>自動販売機</title>
+</head>
+<body>
+    <div id="mainItems">
+        <table>
+            <tr>
+                <td class="items">お〜いお茶</td>
+                <td class="items">伊右衛門</td>
+                <td class="items">コーラ</td>
+                <td class="items">三ツ矢サイダー</td>
+                <td class="items">BOSSブラック</td>
+            </tr>
+            <tr>
+                <td>あったか〜い</td>
+                <td>つめた〜い</td>
+                <td>あったか〜い</td>
+                <td>ぬる〜い</td>
+                <td>つめた〜い</td>
+            </tr>
+            <tr>
+                <td class="itemVal">120</td>
+                <td class="itemVal">120</td>
+                <td class="itemVal">140</td>
+                <td class="itemVal">60</td>
+                <td class="itemVal">900</td>
+            </tr>
+            <tr>
+                <td><button onclick="buyitem(1)">購入</button></td>
+                <td><button onclick="buyitem(2)">購入</button></td>
+                <td><button onclick="buyitem(3)">購入</button></td>
+                <td><button onclick="buyitem(4)">購入</button></td>
+                <td><button onclick="buyitem(5)">購入</button></td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <label for="inputCoin">お金を入れてください。</label>
+        <input type="number" id="inputCoin">
+    </div>
+    <div>
+        <label for="returns">おつり</label>
+        <input type="number" id="returns" disabled="true">
+    </div>
+    <div>
+        <label for="returnItem">商品</label>
+        <input type="text" id="returnItem" disabled="true">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
